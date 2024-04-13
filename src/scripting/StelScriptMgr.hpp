@@ -90,6 +90,7 @@ public:
 	
 	//! Add all the StelModules into the script engine
 	void addModules();
+	QJSValue globalObject();
 
 	//! Add a single QObject as scripting object
 	//! The object must have set a name by QObject::setObjectName().

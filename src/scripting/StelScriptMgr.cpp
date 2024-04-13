@@ -533,6 +533,11 @@ StelScriptMgr::~StelScriptMgr()
 #endif
 }
 
+QJSValue StelScriptMgr::globalObject(){
+
+		return engine->globalObject();
+}
+
 void StelScriptMgr::addModules() 
 {
 	// Add all the StelModules into the script engine
